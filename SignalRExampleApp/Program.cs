@@ -44,4 +44,5 @@ app.MapControllerRoute(
 app.MapRazorPages()
    .WithStaticAssets();
 app.MapHub<UserHub>("/hubs/userCount");
+
 app.Run();
