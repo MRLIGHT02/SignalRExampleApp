@@ -4,6 +4,6 @@ namespace SignalRExampleApp.Hubs
 {
     public class UserHub : Hub
     {
-        Hub hub = new Hub();
+
     }
 }

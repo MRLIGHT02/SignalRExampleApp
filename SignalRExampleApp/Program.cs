@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SignalRExampleApp.Data;
+using SignalRExampleApp.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,5 +43,5 @@ app.MapControllerRoute(
 
 app.MapRazorPages()
    .WithStaticAssets();
-
+app.MapHub<UserHub>("/hubs/userCount");
 app.Run();
