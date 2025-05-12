@@ -1,6 +1,9 @@
-﻿namespace SignalRExampleApp.Hubs
+﻿using Microsoft.AspNetCore.SignalR;
+
+namespace SignalRExampleApp.Hubs
 {
-    public class UserHub
+    public class UserHub : Hub
     {
+        Hub hub = new Hub();
     }
 }
